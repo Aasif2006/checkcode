@@ -1,0 +1,30 @@
+body{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+span{
+  font-size: 11rem;
+  display: inline-block;
+  letter-spacing: 5rem;
+color: blue;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.active{
+  animation: jump 2s ease-in-out;
+}
+
+@keyframes jump{
+  0% {
+    transform: translateY(0,0) ;
+    transform: rotate(180deg);
+  }
+  
+  100%{
+    transform: translate(0,-200px) scale(1.5);
+  }
+}
